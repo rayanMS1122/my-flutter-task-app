@@ -2,7 +2,6 @@
 
 **Serenity Tasks** ist eine benutzerfreundliche Aufgabenverwaltungs-App, die dir hilft, deine täglichen Aufgaben effizient zu organisieren und zu erledigen. Die App ist für iOS und Android verfügbar und bietet zahlreiche Funktionen zur Verbesserung deiner Produktivität.
 
-![Serenity Tasks Banner](assets/images/serenity_banner.png)
 
 ## 📱 Funktionen
 
