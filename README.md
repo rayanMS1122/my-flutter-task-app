@@ -21,13 +21,10 @@
 ![Login Screen](assets/images/login_screen.jpg)
 
 ### Aufgabenliste
-![Task List](assets/images/task_list.png)
-
-### Profilbild auswählen
-![Profile Picture](assets/images/profile_picture.png)
+![Task List](assets/images/task_list.jpg)
 
 ### Benachrichtigungseinstellungen
-![Notification Settings](assets/images/notification_settings.png)
+![Notification Settings](assets/images/notification_settings.jpg)
 
 ## ⚙️ Installation
 
