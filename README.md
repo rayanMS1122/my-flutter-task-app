@@ -53,9 +53,6 @@
 - **Provider Package:** Zustandsverwaltung.
 - **Image Picker:** Wähle ein Profilbild aus der Galerie oder mache ein neues Foto.
 
-## 📚 Weitere Informationen
-
-Für eine vollständige Dokumentation und weitere Informationen besuche die [Projektseite auf GitHub](https://github.com/deinbenutzername/serenity_tasks).
 
 ## 📧 Kontakt
 
