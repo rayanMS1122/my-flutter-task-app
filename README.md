@@ -30,9 +30,6 @@
 ### Einstellungbildschirm
 <img src="assets/images/screenshots/setting_screen.jpeg" alt="Profile Picture" width="300">
 
-### Benachrichtigungseinstellungen
-<img src="assets/images/screenshots/notification_settings.jpg" alt="Notification Settings" width="300">
-
 ### Menu
 <img src="assets/images/screenshots/drawer.jpeg" alt="Notification Settings" width="300">
 ## ⚙️ Installation
