@@ -2,10 +2,6 @@
 
 **Serenity Tasks** ist eine benutzerfreundliche Aufgabenverwaltungs-App, die dir hilft, deine täglichen Aufgaben effizient zu organisieren und zu erledigen. Die App ist für iOS und Android verfügbar und bietet zahlreiche Funktionen zur Verbesserung deiner Produktivität.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1715206b1d6a3fdc615ab17a95af79850915269a
 ## 📱 Funktionen
 
 - **Benutzerregistrierung und Authentifizierung:** Sichere Anmeldung für personalisierten Zugriff.
@@ -21,23 +17,16 @@
 ## 🖼️ Screenshots
 
 ### Anmeldebildschirm
-![Login Screen](assets/images/screenshots/login_screen.jpg)
+<img src="assets/images/screenshots/login_screen.jpg" alt="Login Screen" width="300">
 
 ### Aufgabenliste
-<<<<<<< HEAD
-![Task List](assets/images/screenshots/task_list.jpeg)
+<img src="assets/images/screenshots/task_list.jpeg" alt="Task List" width="300">
 
 ### Profilbild auswählen
-![Profile Picture](assets/images/screenshots/profile_picture.jpg)
+<img src="assets/images/screenshots/profile_picture.jpg" alt="Profile Picture" width="300">
 
 ### Benachrichtigungseinstellungen
-![Notification Settings](assets/images/screenshots/notification_settings.jpg)
-=======
-![Task List](assets/images/task_list.jpg)
-
-### Benachrichtigungseinstellungen
-![Notification Settings](assets/images/notification_settings.jpg)
->>>>>>> 1715206b1d6a3fdc615ab17a95af79850915269a
+<img src="assets/images/screenshots/notification_settings.jpg" alt="Notification Settings" width="300">
 
 ## ⚙️ Installation
 
@@ -63,10 +52,6 @@
 - **Provider Package:** Zustandsverwaltung.
 - **Image Picker:** Wähle ein Profilbild aus der Galerie oder mache ein neues Foto.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1715206b1d6a3fdc615ab17a95af79850915269a
 ## 📧 Kontakt
 
 Bei Fragen oder Anmerkungen kannst du mich gerne kontaktieren:
