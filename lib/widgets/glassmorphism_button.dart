@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'dart:ui'; // For the glassmorphism effect
 
 class GlassmorphismButton extends StatefulWidget {
   final String text;
@@ -24,12 +24,15 @@ class _GlassmorphismButtonState extends State<GlassmorphismButton>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 1),
+      duration: const Duration(milliseconds: 250),
     );
   }
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
+
     return GestureDetector(
       onTapDown: (_) => _controller.forward(),
       onTapUp: (_) {
@@ -37,29 +40,91 @@ class _GlassmorphismButtonState extends State<GlassmorphismButton>
         widget.onPressed();
       },
       child: ScaleTransition(
-        scale: Tween<double>(begin: 1.0, end: 0.89).animate(CurvedAnimation(
+        scale: Tween<double>(begin: 1.0, end: 0.96).animate(CurvedAnimation(
           parent: _controller,
           curve: Curves.easeInOut,
         )),
         child: Container(
-          width: MediaQuery.of(context).size.width * 0.9,
-          height: MediaQuery.of(context).size.height * 0.065,
+          width: MediaQuery.of(context).size.width * 0.8,
+          height: MediaQuery.of(context).size.height * 0.07,
           alignment: Alignment.center,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: Colors.white.withOpacity(0.13)),
-            gradient: LinearGradient(
-              colors: [
-                Colors.white.withOpacity(0.1),
-                Colors.white.withOpacity(0.05)
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Text(
-            widget.text,
-            style: const TextStyle(color: Colors.white),
+          child: Stack(
+            children: [
+              // Frosted Glass Effect
+              ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(
+                        // color: isDarkMode
+                        //     ? Colors.white.withOpacity(0.3)
+                        //     : Colors.black.withOpacity(0.3),
+                        width: 1.5,
+                      ),
+                      // gradient: LinearGradient(
+                      //   colors: [
+                      //     isDarkMode
+                      //         ? Colors.purple.withOpacity(0.3)
+                      //         : Colors.blue.withOpacity(0.3),
+                      //     isDarkMode
+                      //         ? Colors.blue.withOpacity(0.3)
+                      //         : Colors.purple.withOpacity(0.3),
+                      //   ],
+                      //   begin: Alignment.topLeft,
+                      //   end: Alignment.bottomRight,
+                      // ),
+                    ),
+                  ),
+                ),
+              ),
+              // Glow and Shadows
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    BoxShadow(
+                      color: isDarkMode
+                          ? Colors.white.withOpacity(0.2)
+                          : Colors.black.withOpacity(0.2),
+                      blurRadius: 20,
+                      spreadRadius: 2,
+                      offset: const Offset(-5, -5),
+                    ),
+                    BoxShadow(
+                      color: isDarkMode
+                          ? Colors.black.withOpacity(0.2)
+                          : Colors.white.withOpacity(0.2),
+                      blurRadius: 20,
+                      spreadRadius: 2,
+                      offset: const Offset(5, 5),
+                    ),
+                  ],
+                ),
+                alignment: Alignment.center,
+                child: Text(
+                  widget.text,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: isDarkMode ? Colors.white : Colors.black,
+                    letterSpacing: 1.2,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 10,
+                        color: isDarkMode
+                            ? Colors.black.withOpacity(0.5)
+                            : Colors.black26,
+                        offset: const Offset(2, 2),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

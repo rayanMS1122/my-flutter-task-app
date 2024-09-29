@@ -23,15 +23,8 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
-      case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
+
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -48,17 +41,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBcC_rX5C3UlbmpGSbJV25cGWTBFkyfVcc',
-    appId: '1:403516461349:web:47d56a6f944f485ae9cacc',
+    appId: '1:403516461349:web:ad471042a8b9cc5fe9cacc',
     messagingSenderId: '403516461349',
     projectId: 'task-app-5df27',
     authDomain: 'task-app-5df27.firebaseapp.com',
     storageBucket: 'task-app-5df27.appspot.com',
-    measurementId: 'G-D241SLWSW0',
+    measurementId: 'G-9MG4EXB91S',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDdKc8Nd9c8O_JV-3pS9yf2CVFwV8CNMnE',
-    appId: '1:403516461349:android:82836b517d2c7d0ae9cacc',
+    appId: '1:403516461349:android:5e7242b7fc927af8e9cacc',
     messagingSenderId: '403516461349',
     projectId: 'task-app-5df27',
     storageBucket: 'task-app-5df27.appspot.com',
@@ -66,11 +59,20 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyBcC_rX5C3UlbmpGSbJV25cGWTBFkyfVcc',
-    appId: '1:403516461349:web:e62ee32c3791c510e9cacc',
+    appId: '1:403516461349:web:f5eea9b9eae4ebfee9cacc',
     messagingSenderId: '403516461349',
     projectId: 'task-app-5df27',
     authDomain: 'task-app-5df27.firebaseapp.com',
     storageBucket: 'task-app-5df27.appspot.com',
-    measurementId: 'G-660NV41KGR',
+    measurementId: 'G-WCFNHT017C',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyBQbd-ypdYxbsDgg0T9OXh5d_-TPZvebM4',
+    appId: '1:403516461349:ios:5a03e5a1a6912a07e9cacc',
+    messagingSenderId: '403516461349',
+    projectId: 'task-app-5df27',
+    storageBucket: 'task-app-5df27.appspot.com',
+    iosBundleId: 'com.serenitytasks.product',
   );
 }

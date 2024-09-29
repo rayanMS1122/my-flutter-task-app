@@ -7,6 +7,7 @@ class TaskTile extends StatefulWidget {
   final VoidCallback checkOnPress;
   final VoidCallback deleteOnPress;
   bool isComplete;
+  bool favorite; 
 
   TaskTile({
     required this.id,
@@ -15,6 +16,7 @@ class TaskTile extends StatefulWidget {
     required this.checkOnPress,
     required this.deleteOnPress,
     this.isComplete = false,
+    this.favorite = false,
   });
 
   factory TaskTile.fromMap(Map<String, dynamic> map) {
@@ -40,6 +42,8 @@ class TaskTile extends StatefulWidget {
 
   @override
   State<TaskTile> createState() => _TaskTileState();
+
+  static fromFirestore(Map<String, dynamic> data) {}
 }
 
 class _TaskTileState extends State<TaskTile> {

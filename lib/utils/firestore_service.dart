@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:example3/utils/task_tile.dart';
+import 'package:serenity_tasks/utils/task_tile.dart';
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
 
@@ -81,6 +81,21 @@ class FirestoreService {
         .collection('tasks')
         .doc(taskId)
         .update({'isComplete': isComplete});
+  }
+
+
+  Future<void> updateTaskFavoriteStatus(
+      String userId, String taskId, bool isFavorite) async {
+    try {
+      await _db
+          .collection('users')
+          .doc(userId)
+          .collection('tasks')
+          .doc(taskId)
+          .update({'favorite': isFavorite});
+    } catch (e) {
+      print('Error updating favorite status: $e');
+    }
   }
 
   // Update the task's title and date

@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:403516461349:android:82836b517d2c7d0ae9cacc",
+        "mobilesdk_app_id": "1:403516461349:android:5e7242b7fc927af8e9cacc",
         "android_client_info": {
-          "package_name": "com.example.example3"
+          "package_name": "com.serenitytasks.product"
         }
       },
       "oauth_client": [],

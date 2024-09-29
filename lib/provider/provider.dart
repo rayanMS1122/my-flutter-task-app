@@ -5,14 +5,21 @@ class UiProvider extends ChangeNotifier {
   bool _isDark = false;
   bool get isDark => _isDark;
 
-  late SharedPreferences _storage = SharedPreferences.getInstance() as SharedPreferences;
+  late SharedPreferences _storage =
+      SharedPreferences.getInstance() as SharedPreferences;
 
   // Custom dark theme
   final darkTheme = ThemeData(
     primaryColor: Colors.black12,
     brightness: Brightness.dark,
     primaryColorDark: Colors.black12,
-    
+    fontFamily: 'Schyler', 
+    // changing fonts of the app
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(fontFamily: "Schyler"),
+      bodyMedium: TextStyle(fontFamily: "Schyler"),
+      bodySmall: TextStyle(fontFamily: "Schyler"),
+    ),
   );
 
   // Custom light theme
@@ -20,6 +27,13 @@ class UiProvider extends ChangeNotifier {
     primaryColor: Colors.white,
     brightness: Brightness.light,
     primaryColorDark: Colors.white,
+    fontFamily: 'Schyler',
+    // changing fonts of the app
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(fontFamily: "Schyler"),
+      bodyMedium: TextStyle(fontFamily: "Schyler"),
+      bodySmall: TextStyle(fontFamily: "Schyler"),
+    ),
   );
 
   UiProvider() {

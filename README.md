@@ -2,8 +2,6 @@
 
 **Serenity Tasks** ist eine benutzerfreundliche Aufgabenverwaltungs-App, die dir hilft, deine täglichen Aufgaben effizient zu organisieren und zu erledigen. Die App ist für iOS und Android verfügbar und bietet zahlreiche Funktionen zur Verbesserung deiner Produktivität.
 
-![Serenity Tasks Banner](assets/images/serenity_banner.png)
-
 ## 📱 Funktionen
 
 - **Benutzerregistrierung und Authentifizierung:** Sichere Anmeldung für personalisierten Zugriff.
@@ -19,16 +17,16 @@
 ## 🖼️ Screenshots
 
 ### Anmeldebildschirm
-![Login Screen](assets/images/login_screen.jpg)
+![Login Screen](assets/images/screenshots/login_screen.jpg)
 
 ### Aufgabenliste
-![Task List](assets/images/task_list.png)
+![Task List](assets/images/screenshots/task_list.jpeg)
 
 ### Profilbild auswählen
-![Profile Picture](assets/images/profile_picture.png)
+![Profile Picture](assets/images/screenshots/profile_picture.jpg)
 
 ### Benachrichtigungseinstellungen
-![Notification Settings](assets/images/notification_settings.png)
+![Notification Settings](assets/images/screenshots/notification_settings.jpg)
 
 ## ⚙️ Installation
 
@@ -53,10 +51,6 @@
 - **Firebase:** Authentifizierung, Datenbank und Speicherlösung.
 - **Provider Package:** Zustandsverwaltung.
 - **Image Picker:** Wähle ein Profilbild aus der Galerie oder mache ein neues Foto.
-
-## 📚 Weitere Informationen
-
-Für eine vollständige Dokumentation und weitere Informationen besuche die [Projektseite auf GitHub](https://github.com/deinbenutzername/serenity_tasks).
 
 ## 📧 Kontakt
 

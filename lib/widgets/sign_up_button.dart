@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SignUpButton extends StatefulWidget {
@@ -30,6 +29,10 @@ class _SignUpButtonState extends State<SignUpButton>
 
   @override
   Widget build(BuildContext context) {
+    // Determine if the current theme is dark or light mode
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
+
     return GestureDetector(
       onTapDown: (_) => _controller.forward(),
       onTapUp: (_) {
@@ -47,19 +50,32 @@ class _SignUpButtonState extends State<SignUpButton>
           alignment: Alignment.center,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: Colors.white.withOpacity(0.13)),
+            border: Border.all(
+                // Adjust the border color based on light/dark mode
+                // color: isDarkMode
+                //     ? Colors.white.withOpacity(0.13)
+                //     : Colors.black.withOpacity(0.13),
+                ),
             gradient: LinearGradient(
-              colors: [
-                Colors.white.withOpacity(0.1),
-                Colors.white.withOpacity(0.05)
-              ],
+              colors: isDarkMode
+                  ? [
+                      Colors.black.withOpacity(0.2),
+                      Colors.black.withOpacity(0.1),
+                    ]
+                  : [
+                      Colors.white.withOpacity(0.1),
+                      Colors.white.withOpacity(0.05),
+                    ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
           child: Text(
             widget.text,
-            style: const TextStyle(color: Colors.white),
+            // Adjust the text color based on light/dark mode
+            style: TextStyle(
+              color: isDarkMode ? Colors.white : Colors.black,
+            ),
           ),
         ),
       ),

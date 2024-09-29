@@ -13,10 +13,11 @@ class SignInButton extends StatelessWidget {
     return MaterialButton(
       padding: EdgeInsets.zero,
       onPressed: onPressed,
+      
       child: Ink(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF00B4DB), Color(0xFF0083B0)],
+            colors: [Color(0xFF00B4DB), Color(0xFF0083B0),],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),

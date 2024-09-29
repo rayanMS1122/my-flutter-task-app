@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:example3/utils/task_tile.dart';
+import 'package:serenity_tasks/utils/task_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class AddTaskDialog extends StatefulWidget {
   final void Function(TaskTile task) onAddTask;
-  
+
   const AddTaskDialog({
     super.key,
     required this.onAddTask,
@@ -62,16 +62,14 @@ class _AddTaskDialogState extends State<AddTaskDialog> {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.deepPurple[50],
+                  color: Colors.grey.shade200,
                 ),
                 child: ListTile(
-                  leading: Icon(Icons.date_range,
-                      size: 30, color: Colors.deepPurple),
+                  leading: Icon(Icons.date_range, size: 30),
                   title: Text(
                     DateFormat("d MMMM yyyy")
                         .format(_selectedDay ?? _focusedDay),
-                    style:
-                        TextStyle(fontSize: 18, color: Colors.deepPurple[700]),
+                    style: TextStyle(fontSize: 18, color: Colors.blueGrey),
                   ),
                   onTap: () {
                     _showCalendarDialog(context);
@@ -140,10 +138,10 @@ class _AddTaskDialogState extends State<AddTaskDialog> {
         labelStyle: const TextStyle(
           fontFamily: 'PlayfairDisplay',
           fontSize: 18,
-          color: Colors.deepPurple,
+          color: Colors.grey,
         ),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.deepPurple),
+          borderSide: const BorderSide(color: Colors.grey),
           borderRadius: BorderRadius.circular(10),
         ),
         focusedBorder: OutlineInputBorder(
@@ -216,7 +214,7 @@ class _AddTaskDialogState extends State<AddTaskDialog> {
                   label: "I understand",
                   textColor: Colors.yellowAccent,
                 ),
-                backgroundColor: Colors.deepPurple,
+                backgroundColor: Colors.grey,
                 behavior: SnackBarBehavior.floating,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -229,7 +227,7 @@ class _AddTaskDialogState extends State<AddTaskDialog> {
             }
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.deepPurple,
+            backgroundColor: Colors.grey,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
