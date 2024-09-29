@@ -17,17 +17,24 @@
 ## 🖼️ Screenshots
 
 ### Anmeldebildschirm
-<img src="assets/images/screenshots/login_screen.jpg" alt="Login Screen" width="300">
+<img src="assets/images/screenshots/login_screen_dark_mode.jpeg" alt="Login Screen" width="300">
+<img src="assets/images/screenshots/login_screen_light_mode.jpeg" alt="Login Screen" width="300">
 
 ### Aufgabenliste
 <img src="assets/images/screenshots/task_list.jpeg" alt="Task List" width="300">
+<img src="assets/images/screenshots/finished_screen.jpeg" alt="Task List" width="300">
 
-### Profilbild auswählen
-<img src="assets/images/screenshots/profile_picture.jpg" alt="Profile Picture" width="300">
+### Notesliste
+<img src="assets/images/screenshots/notes_screen.jpeg" alt="Task List" width="300">
+
+### Einstellungbildschirm
+<img src="assets/images/screenshots/setting_screen.jpeg" alt="Profile Picture" width="300">
 
 ### Benachrichtigungseinstellungen
 <img src="assets/images/screenshots/notification_settings.jpg" alt="Notification Settings" width="300">
 
+### Menu
+<img src="assets/images/screenshots/drawer.jpeg" alt="Notification Settings" width="300">
 ## ⚙️ Installation
 
 1. **Flutter SDK installieren:** [Flutter installieren](https://flutter.dev/docs/get-started/install)
