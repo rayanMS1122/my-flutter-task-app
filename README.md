@@ -56,7 +56,3 @@
 - **Provider Package:** Zustandsverwaltung.
 - **Image Picker:** Wähle ein Profilbild aus der Galerie oder mache ein neues Foto.
 
-## 📧 Kontakt
-
-Bei Fragen oder Anmerkungen kannst du mich gerne kontaktieren:
-- **E-Mail:** [rayan.mohammed.sulaiman@gmail.com](mailto:rayan.mohammed.sulaiman@gmail.com)
